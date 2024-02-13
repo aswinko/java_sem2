@@ -8,30 +8,37 @@ public class Multidimensional {
         System.out.println("2, Read 2 matrices from the console and perform matrix addition.");
 
 
-        int arr[][] = new int[2][2];
+        int arr1[][] = new int[2][2];
+        int arr2[][] = new int[2][2];
+        int arr3[][] = new int[2][2];
+
+
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the array elements : ");
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                arr[i][j] = sc.nextInt();
+        System.out.println("Enter the 1st array elements : ");
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr1.length; j++) {
+                arr1[i][j] = sc.nextInt();
             }
         }
 
-        int temp = 0;
-        System.out.println("Enter the array elements : ");
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                temp += arr[i][j];
+        System.out.println("Enter the 2nd array elements : ");
+        for (int i = 0; i < arr2.length; i++) {
+            for (int j = 0; j < arr2.length; j++) {
+                arr2[i][j] = sc.nextInt();
             }
         }
 
-        System.out.println("Matrix addition : " + temp);
+        for (int i = 0; i < arr3.length; i++) {
+            for (int j = 0; j < arr3.length; j++) {
+                arr3[i][j] = arr1[i][j] + arr2[i][j];
+            }
+        }
 
         System.out.println("Array elements are : ");
 
-        for (int[] is : arr) {
+        for (int[] is : arr3) {
             System.out.println(Arrays.toString(is));
         }
 
