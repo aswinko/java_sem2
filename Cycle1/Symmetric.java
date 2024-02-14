@@ -4,6 +4,10 @@ import java.util.Scanner;
 public class Symmetric {
 
     public static void main(String[] args) {
+
+
+        System.out.println("Name: Aswin K O \nReg no : 23MCA023 \nDate : 14/02/2024");
+        System.out.println("4, Read a matrix from the console and check whether it is symmetric or not.");
        
 
         Scanner sc = new Scanner(System.in);
@@ -22,7 +26,26 @@ public class Symmetric {
             }
         }
 
-        System.out.println();
+        if (row != column) {
+            System.out.println("It is not Square matrix!");
+        }else {
+            boolean flag = true;
+            for (int i = 0; i < arr.length; i++){
+                for (int j = 0; j < arr.length; j++) {
+                    if (arr[i][j] != arr[j][i]) {
+                        flag = false;
+                        break;
+                    }
+                }
+            }
+            if (flag) {
+                System.out.println("The matrix is Symmetric.");
+            }else {
+                System.out.println("Matrix is not Symmetric.");
+            }
+        }
+
+        System.out.println("Matrix : ");
         for (int[] is : arr) {
             System.out.println(Arrays.toString(is));
         }
