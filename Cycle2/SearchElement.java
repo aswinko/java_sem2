@@ -15,6 +15,9 @@ public class SearchElement {
 
     public static void main(String[] args) {
 
+        System.out.println("Name: Aswin K O \nReg no : 23MCA023 \nDate : 26/02/2024");
+        System.out.println("2. Search an element in an array.");
+
         int size = 2;
         int arr[] = new int[size];
 
@@ -26,7 +29,7 @@ public class SearchElement {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println("Enter the valu to be searched : ");
+        System.out.println("Enter the value to be searched : ");
         int key = sc.nextInt();
 
         int res = search(arr, key);

@@ -1,5 +1,11 @@
 public class StringManipulation {
     public static void main(String[] args) {
+
+
+        System.out.println("Name: Aswin K O \nReg no : 23MCA023 \nDate : 26/02/2024");
+        System.out.println("3. Perform string manipulations");
+
+
         // StringBuilder for string concatenation
         StringBuilder sb = new StringBuilder();
         sb.append("Hello");

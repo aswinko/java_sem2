@@ -4,6 +4,9 @@ import java.util.Scanner;
 class SortString {
     public static void main(String[] args) {
 
+        System.out.println("Name: Aswin K O \nReg no : 23MCA023 \nDate : 26/02/2024");
+        System.out.println("1. Program to Sort strings");
+
         int size, temp;
 
         Scanner sc = new Scanner(System.in);
