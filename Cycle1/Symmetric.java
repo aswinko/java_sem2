@@ -49,6 +49,9 @@ public class Symmetric {
         for (int[] is : arr) {
             System.out.println(Arrays.toString(is));
         }
+        // for (int ar : arr){
+        //     System.out.println(ar);
+        // }
 
     }
 }
